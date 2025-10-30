@@ -1,0 +1,41 @@
+nav {
+    background: #C9BFBF;
+    grid-area: nav;
+}
+
+header {
+    background: #707070;
+    grid-area: header;
+    text-align: center;
+}
+
+section {
+    background: #ABABAB;
+    grid-area: section;
+}
+
+footer {
+    background: #707070;
+    grid-area: footer;
+    font-size: small;
+    text-align: center;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav section section"
+        "footer footer footer";
+    grid-template-rows: 80px 1fr 50px;
+    /* Menentukan lebar 3 kolom: nav (20%), section (sisa ruang), dan kolom ke-3 (18%) */
+    grid-template-columns: 20% 1fr 18%; 
+    grid-gap: 5px;
+    height: 100vh;
+    margin: 10px; /* Tambahan margin 10px pada body */
+} 
+
+/* Menambahkan padding pada elemen utama untuk memberi ruang di dalam kotak */
+header, nav, section, footer {
+    padding: 5px;
+}
