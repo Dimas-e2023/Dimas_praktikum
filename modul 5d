@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Pendaftaran Pasien Klinik Sehat</title>
+</head>
+<body>
+
+    <h2>Formulir Pendaftaran / Janji Temu Pasien Klinik Sehat</h2>
+    <p>Mohon lengkapi data berikut untuk mendaftar atau membuat janji temu.</p>
+
+    <form action="/submit_klinik" method="post">
+        
+        <label for="nama_pasien">Nama Lengkap Pasien:</label><br />
+        <input type="text" id="nama_pasien" name="nama_pasien" required /><br />
+        <br />
+
+        Status Pasien:<br />
+        <input type="radio" id="baru" name="status_pasien" value="Baru" checked />
+        <label for="baru">Pasien Baru</label><br />
+        <input type="radio" id="lama" name="status_pasien" value="Lama" />
+        <label for="lama">Pasien Lama</label><br />
+        <br />
+        
+        <label for="poli">Poli/Layanan yang Dituju:</label><br />
+        <select id="poli" name="poli_tujuan" required>
+            <option value="">-- Pilih Poli --</option>
+            <option value="Umum">Poli Umum</option>
+            <option value="Gigi">Poli Gigi</option>
+            <option value="Anak">Poli Anak</option>
+            <option value="KIA">Poli KIA</option>
+        </select><br />
+        <br />
+
+        <label for="tanggal">Tanggal Janji Temu:</label><br />
+        <input type="date" id="tanggal" name="tanggal_janji" required /><br />
+        <br />
+
+        <label for="keluhan">Keluhan Utama / Catatan Tambahan:</label><br />
+        <textarea id="keluhan" name="keluhan_pasien" rows="5" cols="60" 
+                  placeholder="Contoh: Sakit kepala sejak 3 hari lalu."></textarea><br />
+        <br />
+
+        <input type="submit" value="Kirim Pendaftaran" />
+
+    </form>
+
+</body>
+</html>
