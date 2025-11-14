@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Belajar Membuat Form</title>
+</head>
+<body>
+
+    <form action="formulir.html" method="get">
+
+        Nama: <input type="text" name="nama" value="Nama Kamu" /><br />
+        <br />
+
+        Password: <input type="password" name="password" /><br />
+        <br />
+
+        Jenis Kelamin:<br />
+        <input type="radio" name="jenis_kelamin" value="laki-laki" checked /> Laki - Laki<br />
+        <input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan<br />
+        <br />
+
+        Hobi:<br />
+        <input type="checkbox" name="hobi_baca" /> Membaca Buku<br />
+        <input type="checkbox" name="hobi_nulis" /> Menulis<br />
+        <input type="checkbox" name="hobi_mancing" /> Memancing<br />
+        <br />
+
+        Asal Kota:<br />
+        <select name="asal_kota">
+            <option value="Kota Jakarta">Jakarta</option>
+            <option value="Kota Bandung">Bandung</option>
+            <option value="Kota Semarang" selected>Semarang</option>
+        </select><br />
+        <br />
+
+        Komentar Anda:<br />
+        Silahkan katakan isi hati anda<br />
+        <textarea name="komentar" rows="5" cols="20"></textarea><br />
+        <br />
+
+        <input type="submit" value="Mulai Proses!" /><br />
+        <br />
+
+    </form>
+
+</body>
+</html>
