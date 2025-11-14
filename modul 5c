@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pendaftaran Anggota Perpustakaan Kota Madiun</title>
+</head>
+<body>
+
+    <h2>Formulir Pendaftaran Anggota Perpustakaan Kota Madiun</h2>
+    <p>Silahkan isi data diri Anda di bawah ini:</p>
+
+    <form action="/submit_pendaftaran" method="post">
+        
+        <label for="nama">Nama Lengkap:</label><br />
+        <input type="text" id="nama" name="nama_lengkap" required /><br />
+        <br />
+
+        <label for="telp">Nomor Telepon:</label><br />
+        <input type="text" id="telp" name="nomor_telp" /><br />
+        <br />
+
+        <label for="pendidikan">Pendidikan Terakhir:</label><br />
+        <select id="pendidikan" name="pendidikan_terakhir">
+            <option value="SD">SD/Sederajat</option>
+            <option value="SMP">SMP/Sederajat</option>
+            <option value="SMA" selected>SMA/SMK/Sederajat</option>
+            <option value="D3">Diploma (D3)</option>
+            <option value="S1">Sarjana (S1)</option>
+        </select><br />
+        <br />
+
+        <label for="alamat">Alamat Lengkap:</label><br />
+        <textarea id="alamat" name="alamat_lengkap" rows="4" cols="50" required></textarea><br />
+        <br />
+        
+        Tujuan Mendaftar:<br />
+        <input type="radio" id="baca" name="tujuan" value="Membaca" checked />
+        <label for="baca">Membaca Buku di Tempat</label><br />
+        <input type="radio" id="pinjam" name="tujuan" value="Meminjam" />
+        <label for="pinjam">Meminjam Buku untuk Dibawa Pulang</label><br />
+        <br />
+
+        <input type="submit" value="Daftar Sekarang" />
+
+    </form>
+
+</body>
+</html>
